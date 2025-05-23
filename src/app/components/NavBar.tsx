@@ -1,42 +1,38 @@
 // NavBar.tsx
 "use client"
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function NavBar() {
-  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const goBackHome = () => {
-    router.push('/');
-  };
 
   return (
     <nav className="w-full bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-22">
+        <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <img
-              className="h-7 w-auto cursor-pointer"
-              src="/Neeee.svg"
-              alt="Logo"
-              onClick={goBackHome}
-            />
+            <Link href="/">
+              <img
+                className="h-8 w-auto cursor-pointer"
+                src="/Neeee.svg"
+                alt="Logo"
+              />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 gap-3">
-            <a href="#" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-lg">Home</a>
-            <a href="#" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-lg">Features</a>
-            <a href="#" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-lg">Community</a>
-            <a href="#" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-lg">Blog</a>
-            <a href="#" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-lg">Pricing</a>
-            <button className="bg-[#4CAF4F] cursor-pointer hover:bg-[#388E3C] rounded px-7 py-3 text-lg  text-white flex items-center gap-2">
+          <div className="hidden md:flex items-center space-x-8">
+            <Link href="/" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Home</Link>
+            <Link href="/features" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Features</Link>
+            <Link href="/community" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Community</Link>
+            <Link href="/blog" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Blog</Link>
+            <Link href="/pricing" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Pricing</Link>
+            <Link href="/register" className="bg-[#4CAF4F] hover:bg-[#388E3C] rounded px-6 py-2.5 text-sm font-medium text-white flex items-center gap-2">
               <span className="font-inter">Register Now</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Hamburger */}
@@ -63,18 +59,18 @@ export default function NavBar() {
       {menuOpen && (
         <div className="md:hidden z-2 absolute top-[5rem] right-0">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a href="#" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Home</a>
-            <a href="#" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Features</a>
-            <a href="#" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Community</a>
-            <a href="#" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Blog</a>
-            <a href="#" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Pricing</a>
+            <Link href="/" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link href="/features" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Features</Link>
+            <Link href="/community" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Community</Link>
+            <Link href="/blog" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Blog</Link>
+            <Link href="/pricing" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Pricing</Link>
             <div className="px-3 py-2">
-              <button className="w-full bg-[#4CAF4F] hover:bg-[#388E3C] rounded px-6 py-2.5 text-sm font-medium text-white flex items-center justify-center gap-2">
+              <Link href="/register" className="w-full bg-[#4CAF4F] hover:bg-[#388E3C] rounded px-6 py-2.5 text-sm font-medium text-white flex items-center justify-center gap-2">
                 <span className="font-inter">Register Now</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
