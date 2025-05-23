@@ -1,6 +1,6 @@
 "use client"
 
-import { Marquee } from "@/components/magicui/marquee";
+import { Marquee } from "@/app/components/magicui/marquee";
 import { useRouter } from 'next/navigation';
 
 
