@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className=" w-full">
       <NavBar />
-      <main className="overflow-scroll">
+      <main>
         <HeroSection />
         <Clients />
         <Community />
