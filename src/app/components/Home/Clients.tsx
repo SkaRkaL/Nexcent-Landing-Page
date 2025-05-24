@@ -28,8 +28,8 @@ export default function Clients() {
   return (
     <div className="pt-8 w-[100vw] flex flex-col items-center overflow-hidden">
       <div className="flex items-center flex-col justify-center p-3">
-        <h1 className="text-4xl w-max md:text-[3rem] text-[#4D4D4D] font-semibold">Our Clients</h1>
-        <p className="text-[#717171] text-center text-[1.2rem]">We have been working with some Fortune 500+ clients</p>
+        <h1 className="text-3xl w-max md:text-[3rem] text-[#4D4D4D] font-semibold">Our Clients</h1>
+        <p className="text-[#717171] text-center md:text-[1.2rem]">We have been working with some Fortune 500+ clients</p>
       </div>
       <div className="relative flex items-center justify-center w-[80%]">
         <div className="absolute h-full w-[90px] right-0 z-10 bg-gradient-to-l from-white to-transparent" />
