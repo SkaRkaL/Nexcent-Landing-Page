@@ -5,7 +5,7 @@ export default function Achievements() {
         <h2 className="text-3xl md:text-[2.5rem] text-[#4D4D4D] font-semibold">
           Helping a local
         </h2>
-        <h2 className="text-3xl md:text-[2.5rem] text-[#4CAF4F] font-semibold font-inter">
+        <h2 className="text-3xl md:text-[2.5rem] text-[#4CAF4F] text-center md:text-nowrap font-semibold font-inter">
           business reinvent itself
         </h2>
         <p className="text-lg relative top-3 md:text-[1rem] text-[#717171] font-light font-inter max-w-xl">

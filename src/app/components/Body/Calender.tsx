@@ -23,7 +23,7 @@ export default function Calender() {
         <img
           src="pana.svg"
           alt="Unlock"
-          className="w-full max-w-[350px] md:max-w-[450px] h-auto sm:h-[500px] order-1 sm:order-2"
+          className="w-full max-w-[350px] md:max-w-[450px] h-auto sm:h-[500px] sm:order-2"
         />
 
       </div>

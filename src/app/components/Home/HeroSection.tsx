@@ -2,7 +2,7 @@
 export default function HeroSection() {
   return (
     <div className="bg-[#F5F7FA] overflow-hidden w-[100vw]">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-7xl mx-auto p-7 md:p-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-[75rem] mx-auto p-7 md:p-12">
         <div className="flex flex-col justify-center space-y-6">
           <div className="relative right-0 space-x-2">
             <h2 className="text-3xl md:w-max w-[100%] md:text-[4rem] text-[#4D4D4D] font-semibold">
