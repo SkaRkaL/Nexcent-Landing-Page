@@ -7,6 +7,7 @@ import Unlock from "./components/Body/Unlock";
 import Calender from "./components/Body/Calender";
 import Achievements from "./components/Body/Achievements";
 import Customer from "./components/Body/Customer's";
+import Footer from "./components/Body/Footer";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Calender />
         <Customer />
         <Achievements />
+        <Footer />
       </main>
     </div>
   );
