@@ -7,6 +7,7 @@ import Calender from "./components/Body/Calender";
 import Achievements from "./components/Body/Achievements";
 import Customer from "./components/Body/Customer's";
 import Footer from "./components/Body/Footer";
+import BlogSection from "./components/Body/Community";
 
 
 export default function Home() {
@@ -20,8 +21,8 @@ export default function Home() {
         <Unlock />
         <Achievements />
         <Calender />
+        <BlogSection />
         <Customer />
-        {/* <Achievements /> */}
         <Footer />
       </main>
     </div>

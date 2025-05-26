@@ -7,7 +7,7 @@ export default function Calender() {
   return (
     <div className="bg-[#fbfcfd] overflow-hidden w-[100vw]">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-[13rem] max-w-6xl mx-auto p-7 md:p-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-[13rem] max-w-6xl mx-auto p-7 md:px-10">
 
         <div className="flex flex-col justify-center space-y-6 w-[100%]">
           <div className="relative md:mb-[12px]">
