@@ -1,11 +1,13 @@
 
+import Image from "next/image";
+
 export default function Achievements() {
 
   const data = {
-    members: "2,245,341",
-    eventBookings: "828,867",
+    members: "1,337,042",
+    eventBookings: "420,042",
     clubs: "46,328",
-    payments: "9,999,999"
+    payments: "21,001"
   };
 
   const achievements = [
@@ -64,8 +66,14 @@ export default function Achievements() {
                       {achievement.title}
                     </p>
                   </div>
-                  <div className={`w-[60px] flex justify-center ${achievement.iconSize}`}>
-                    <img src={achievement.icon} alt={achievement.title} className={achievement.iconSize} />
+                  <div className={`w-[60px] flex justify-center items-start ${achievement.iconSize}`}>
+                    <Image
+                      width={60}
+                      height={32}
+                      src={achievement.icon}
+                      alt={achievement.title}
+                      className={achievement.iconSize}
+                    />
                   </div>
                 </div>
               ))}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/Home/HeroSection";
 import Clients from "./components/Home/Clients";
@@ -22,7 +21,7 @@ export default function Home() {
         <Achievements />
         <Calender />
         <Customer />
-        <Achievements />
+        {/* <Achievements /> */}
         <Footer />
       </main>
     </div>
