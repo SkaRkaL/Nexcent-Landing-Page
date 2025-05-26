@@ -12,7 +12,7 @@ const clientsWebSites = [
 export default function Customer() {
   return (
     <div className="bg-[#f0f4f7] w-[100vw] md:px-[150px] md:py-[25px] p-[28px] md:gap-20 gap-6 flex items-center justify-center md:flex-row flex-col">
-      <div className="md:w-[19rem] md:h-[19rem] w-[14rem] h-[14rem] rounded shadow-2xs bg-[url('/Tesla_Logo.jpg')] bg-no-repeat bg-center bg-cover aspect-square" />
+      <div className="md:w-[19rem] md:h-[19rem] w-[14rem] h-[14rem] rounded shadow-2xs bg-[url('/images/Tesla_Logo.jpg')] bg-no-repeat bg-center bg-cover aspect-square" />
 
       <div className="flex flex-col items-center justify-evenly gap-4 md:h-auto text-[#717171]">
         <div className="flex flex-col justify-evenly gap-3">
