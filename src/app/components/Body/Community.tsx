@@ -31,8 +31,7 @@ export default function BlogSection() {
             Caring is the new marketing
           </h2>
           <p className="text-[#717171] text-base md:text-[1.12rem] max-w-4xl mx-auto leading-relaxed">
-            The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's
-            joining the community, read about how our community are increasing their membership income and lot's more.
+            The Nextcent blog is the best place to read about the latest membership insights, trends and more. See whos joining the community, read about how our community are increasing their membership income and lots more.
           </p>
         </div>
 
