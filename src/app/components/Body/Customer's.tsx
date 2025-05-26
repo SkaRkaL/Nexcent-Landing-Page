@@ -46,7 +46,13 @@ export default function Customer() {
 
           <div className="flex items-center gap-3 md:justify-between justify-center cursor-pointer hover:text-[#4CAF4F]">
             <h4 className="text-[#4CAF4F] font-bold">Meet all customers</h4>
-            <img src="Right.svg" alt="right-arrow" className="h-3" />
+            <Image
+              width={20}
+              height={20}
+              src="Right.svg"
+              alt="right-arrow"
+              className="h-3"
+            />
           </div>
         </div>
 

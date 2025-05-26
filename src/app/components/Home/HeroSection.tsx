@@ -1,4 +1,7 @@
 
+import React from "react";
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <div className="bg-[#F5F7FA] overflow-hidden w-[100vw]">
@@ -20,7 +23,9 @@ export default function HeroSection() {
           </button>
         </div>
         <div className="flex justify-center">
-          <img
+          <Image
+            width={450}
+            height={450}
             src="/Illustration.svg"
             alt="Business Illustration"
             className="w-full max-w-[450px]"
