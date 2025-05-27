@@ -30,12 +30,6 @@ export default function NavBar() {
             <Link href="/" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Community</Link>
             <Link href="/" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Blog</Link>
             <Link href="/" className="text-[#4D4D4D] hover:text-[#4CAF4F] font-inter text-base">Pricing</Link>
-            <Link href="/" className="bg-[#4CAF4F] hover:bg-[#388E3C] rounded px-6 py-2.5 text-sm font-medium text-white flex items-center gap-2">
-              <span className="font-inter">Register Now</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
           </div>
 
           {/* Mobile Hamburger */}
@@ -67,14 +61,6 @@ export default function NavBar() {
             <Link href="/" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Community</Link>
             <Link href="/" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link href="/" className="block px-3 py-2 text-base font-medium text-[#4D4D4D] hover:text-[#4CAF4F]" onClick={() => setMenuOpen(false)}>Pricing</Link>
-            <div className="px-3 py-2">
-              <Link href="/" className="w-full bg-[#4CAF4F] hover:bg-[#388E3C] rounded px-6 py-2.5 text-sm font-medium text-white flex items-center justify-center gap-2">
-                <span className="font-inter">Register Now</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
           </div>
         </div>
       )}
